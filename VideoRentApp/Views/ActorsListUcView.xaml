@@ -1,0 +1,51 @@
+﻿<UserControl x:Class="VideoRentApp.Views.ActorsListUcView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:VideoRentApp.Views"
+             xmlns:converters="clr-namespace:VideoRentApp.Converters" 
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <!-- STEP 2: Declare the converter as a resource for this window to use. -->
+    <UserControl.Resources>
+        <converters:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+    </UserControl.Resources>
+    <Grid Margin="240,60,0,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="451*"/>
+            <ColumnDefinition Width="109*"/>
+        </Grid.ColumnDefinitions>
+        <!-- left, top, right, bottom-->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="9.686"/>
+            <RowDefinition Height="28.274"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" Margin="0,0,0,10" Grid.ColumnSpan="2" Grid.RowSpan="2">
+            <Button Content="Añadir Actor" Command="{Binding AddActorCommand}" Margin="0,0,10,0" Padding="10,5"/>
+            <Button Content="Editar Actor" Command="{Binding EditActorCommand}" Margin="0,0,10,0" Padding="10,5"/>
+            <Button Content="Eliminar Actor" Command="{Binding DeleteActorCommand}" Padding="10,5" Background="LightCoral"/>
+        </StackPanel>
+
+        <DataGrid Grid.Row="2"
+                  ItemsSource="{Binding Actors}"
+                  SelectedItem="{Binding SelectedActor, Mode=TwoWay}"
+                  AutoGenerateColumns="False"
+                  CanUserAddRows="False"
+                  IsReadOnly="True"
+                  SelectionMode="Single" Grid.ColumnSpan="2">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding ActorId}" Width="Auto"/>
+                <DataGridTextColumn Header="Nombre" Binding="{Binding NombreActor}" Width="*"/>
+                <DataGridTextColumn Header="Apellidos" Binding="{Binding ApellidosActor}" Width="2*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <!-- Indicador de Carga (opcional pero recomendado) -->
+        <Grid Grid.Row="2" Background="#80FFFFFF" Visibility="{Binding IsLoading, Converter={StaticResource BooleanToVisibilityConverter}}" Grid.ColumnSpan="2">
+            <TextBlock Text="Cargando..." HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"/>
+        </Grid>
+    </Grid>
+</UserControl>
