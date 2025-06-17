@@ -11,41 +11,60 @@
     <UserControl.Resources>
         <converters:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
     </UserControl.Resources>
-    <Grid Margin="240,60,0,0">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="451*"/>
-            <ColumnDefinition Width="109*"/>
-        </Grid.ColumnDefinitions>
-        <!-- left, top, right, bottom-->
-        <Grid.RowDefinitions>
-            <RowDefinition Height="9.686"/>
-            <RowDefinition Height="28.274"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
+    <StackPanel Margin="240,60,10,50">
+        <Grid Visibility="{Binding DataContext.IsEditingOrAdding, 
+             RelativeSource={RelativeSource AncestorType=UserControl}, 
+             Converter={StaticResource BooleanToVisibilityConverter}}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="451*"/>
+                <ColumnDefinition Width="109*"/>
+            </Grid.ColumnDefinitions>
+            <!-- left, top, right, bottom-->
+            <Grid.RowDefinitions>
+                <RowDefinition Height="9.686"/>
+                <RowDefinition Height="28.274"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
 
-        <StackPanel Orientation="Horizontal" Margin="0,0,0,10" Grid.ColumnSpan="2" Grid.RowSpan="2">
-            <Button Content="Añadir Actor" Command="{Binding AddActorCommand}" Margin="0,0,10,0" Padding="10,5"/>
-            <Button Content="Editar Actor" Command="{Binding EditActorCommand}" Margin="0,0,10,0" Padding="10,5"/>
-            <Button Content="Eliminar Actor" Command="{Binding DeleteActorCommand}" Padding="10,5" Background="LightCoral"/>
-        </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10" Grid.ColumnSpan="2" Grid.RowSpan="2">
+                <Button Content="Añadir Actor" Command="{Binding AddActorCommand}" Margin="0,0,10,0" Padding="10,5"/>
+                <Button Content="Editar Actor" Command="{Binding EditActorCommand}" Margin="0,0,10,0" Padding="10,5"/>
+                <Button Content="Eliminar Actor" Command="{Binding DeleteActorCommand}" Padding="10,5" Background="LightCoral"/>
+            </StackPanel>
 
-        <DataGrid Grid.Row="2"
-                  ItemsSource="{Binding Actors}"
-                  SelectedItem="{Binding SelectedActor, Mode=TwoWay}"
-                  AutoGenerateColumns="False"
-                  CanUserAddRows="False"
-                  IsReadOnly="True"
-                  SelectionMode="Single" Grid.ColumnSpan="2">
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="ID" Binding="{Binding ActorId}" Width="Auto"/>
-                <DataGridTextColumn Header="Nombre" Binding="{Binding NombreActor}" Width="*"/>
-                <DataGridTextColumn Header="Apellidos" Binding="{Binding ApellidosActor}" Width="2*"/>
-            </DataGrid.Columns>
-        </DataGrid>
+            <DataGrid Grid.Row="2"
+              ItemsSource="{Binding Actors}"
+              SelectedItem="{Binding SelectedActor, Mode=TwoWay}"
+              AutoGenerateColumns="False"
+              CanUserAddRows="False"
+              IsReadOnly="True"
+              SelectionMode="Single" Grid.ColumnSpan="2">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="ID" Binding="{Binding ActorId}" Width="Auto"/>
+                    <DataGridTextColumn Header="Nombre" Binding="{Binding NombreActor}" Width="*"/>
+                    <DataGridTextColumn Header="Apellidos" Binding="{Binding ApellidosActor}" Width="2*"/>
+                </DataGrid.Columns>
+            </DataGrid>
 
-        <!-- Indicador de Carga (opcional pero recomendado) -->
-        <Grid Grid.Row="2" Background="#80FFFFFF" Visibility="{Binding IsLoading, Converter={StaticResource BooleanToVisibilityConverter}}" Grid.ColumnSpan="2">
-            <TextBlock Text="Cargando..." HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"/>
+            
+
+
+            <!-- Indicador de Carga (opcional pero recomendado) -->
+            <Grid Grid.Row="2" Background="#80FFFFFF" Visibility="{Binding IsLoading, Converter={StaticResource BooleanToVisibilityConverter}}" Grid.ColumnSpan="2">
+                <TextBlock Text="Cargando..." HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="60"/>
+            </Grid>
         </Grid>
-    </Grid>
+        <!--TODO VISTA DE FORMULARIO (para añadir o editar) -->
+        <!-- Su DataContext se establecerá a la propiedad ActorInEdit del ViewModel -->
+        <!-- Es clave the RelativeSource para que no asuma que la propiedad IsEditingOrAdding está en el DataContext -->
+       <local:ActorFormUcView Grid.RowSpan="3" Grid.ColumnSpan="2"
+       DataContext="{Binding ActorInEdit}" 
+       Visibility="{Binding DataContext.IsEditingOrAdding, 
+                    RelativeSource={RelativeSource AncestorType=UserControl}, 
+                    Converter={StaticResource BooleanToVisibilityConverter}}"
+       Panel.ZIndex="100" 
+       HorizontalAlignment="Center"
+       VerticalAlignment="Center"/>
+    </StackPanel>
+    
 </UserControl>

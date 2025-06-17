@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET9_0;NETCOREAPP
 C:\SW_DEV\Lenguajes2025\DotNet\VideoRentApp\VideoRentApp\App.xaml
-3-1226559894
+4812188270
 
-121142745555
+141704087264
 210572448803
-MainWindow.xaml;Templates.xaml;Views\ActorsListUcView.xaml;
+MainWindow.xaml;Templates.xaml;Views\ActorFormUcView.xaml;Views\ActorsListUcView.xaml;
 
 True
 

@@ -36,3 +36,6 @@ C:\SW_DEV\Lenguajes2025\DotNet\VideoRentApp\VideoRentApp\bin\Debug\net9.0-window
 C:\SW_DEV\Lenguajes2025\DotNet\VideoRentApp\VideoRentApp\bin\Debug\net9.0-windows\Converters\BooleanToVisibilityConverter.cs
 C:\SW_DEV\Lenguajes2025\DotNet\VideoRentApp\VideoRentApp\obj\Debug\net9.0-windows\GeneratedInternalTypeHelper.g.cs
 C:\SW_DEV\Lenguajes2025\DotNet\VideoRentApp\VideoRentApp\bin\Debug\net9.0-windows\appsettings.json
+C:\SW_DEV\Lenguajes2025\DotNet\VideoRentApp\VideoRentApp\obj\Debug\net9.0-windows\VideoRentApp.sourcelink.json
+C:\SW_DEV\Lenguajes2025\DotNet\VideoRentApp\VideoRentApp\obj\Debug\net9.0-windows\Views\ActorFormUcView.g.cs
+C:\SW_DEV\Lenguajes2025\DotNet\VideoRentApp\VideoRentApp\obj\Debug\net9.0-windows\Views\ActorFormUcView.baml

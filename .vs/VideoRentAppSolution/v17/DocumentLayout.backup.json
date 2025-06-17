@@ -3,28 +3,32 @@
   "WorkspaceRootPath": "C:\\SW_DEV\\Lenguajes2025\\DotNet\\VideoRentApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9A257412-3934-4909-AB0F-7F608EC56C40}|VideoRentApp\\VideoRentApp.csproj|c:\\sw_dev\\lenguajes2025\\dotnet\\videorentapp\\videorentapp\\templates.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{9A257412-3934-4909-AB0F-7F608EC56C40}|VideoRentApp\\VideoRentApp.csproj|solutionrelative:videorentapp\\templates.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9A257412-3934-4909-AB0F-7F608EC56C40}|VideoRentApp\\VideoRentApp.csproj|c:\\sw_dev\\lenguajes2025\\dotnet\\videorentapp\\videorentapp\\viewmodel\\actorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9A257412-3934-4909-AB0F-7F608EC56C40}|VideoRentApp\\VideoRentApp.csproj|solutionrelative:videorentapp\\viewmodel\\actorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9A257412-3934-4909-AB0F-7F608EC56C40}|VideoRentApp\\VideoRentApp.csproj|c:\\sw_dev\\lenguajes2025\\dotnet\\videorentapp\\videorentapp\\services\\actorapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A257412-3934-4909-AB0F-7F608EC56C40}|VideoRentApp\\VideoRentApp.csproj|solutionrelative:videorentapp\\services\\actorapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A257412-3934-4909-AB0F-7F608EC56C40}|VideoRentApp\\VideoRentApp.csproj|c:\\sw_dev\\lenguajes2025\\dotnet\\videorentapp\\videorentapp\\views\\actorslistucview.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{9A257412-3934-4909-AB0F-7F608EC56C40}|VideoRentApp\\VideoRentApp.csproj|solutionrelative:videorentapp\\views\\actorslistucview.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+      "AbsoluteMoniker": "D:0:0:{9A257412-3934-4909-AB0F-7F608EC56C40}|VideoRentApp\\VideoRentApp.csproj|c:\\sw_dev\\lenguajes2025\\dotnet\\videorentapp\\videorentapp\\views\\actorslistucview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A257412-3934-4909-AB0F-7F608EC56C40}|VideoRentApp\\VideoRentApp.csproj|solutionrelative:videorentapp\\views\\actorslistucview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9A257412-3934-4909-AB0F-7F608EC56C40}|VideoRentApp\\VideoRentApp.csproj|c:\\sw_dev\\lenguajes2025\\dotnet\\videorentapp\\videorentapp\\views\\actorslistucview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{9A257412-3934-4909-AB0F-7F608EC56C40}|VideoRentApp\\VideoRentApp.csproj|solutionrelative:videorentapp\\views\\actorslistucview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9A257412-3934-4909-AB0F-7F608EC56C40}|VideoRentApp\\VideoRentApp.csproj|c:\\sw_dev\\lenguajes2025\\dotnet\\videorentapp\\videorentapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{9A257412-3934-4909-AB0F-7F608EC56C40}|VideoRentApp\\VideoRentApp.csproj|solutionrelative:videorentapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{9A257412-3934-4909-AB0F-7F608EC56C40}|VideoRentApp\\VideoRentApp.csproj|c:\\sw_dev\\lenguajes2025\\dotnet\\videorentapp\\videorentapp\\views\\actorformucview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A257412-3934-4909-AB0F-7F608EC56C40}|VideoRentApp\\VideoRentApp.csproj|solutionrelative:videorentapp\\views\\actorformucview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A257412-3934-4909-AB0F-7F608EC56C40}|VideoRentApp\\VideoRentApp.csproj|c:\\sw_dev\\lenguajes2025\\dotnet\\videorentapp\\videorentapp\\views\\actorformucview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9A257412-3934-4909-AB0F-7F608EC56C40}|VideoRentApp\\VideoRentApp.csproj|solutionrelative:videorentapp\\views\\actorformucview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A257412-3934-4909-AB0F-7F608EC56C40}|VideoRentApp\\VideoRentApp.csproj|c:\\sw_dev\\lenguajes2025\\dotnet\\videorentapp\\videorentapp\\converters\\booleantovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A257412-3934-4909-AB0F-7F608EC56C40}|VideoRentApp\\VideoRentApp.csproj|solutionrelative:videorentapp\\converters\\booleantovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A257412-3934-4909-AB0F-7F608EC56C40}|VideoRentApp\\VideoRentApp.csproj|c:\\sw_dev\\lenguajes2025\\dotnet\\videorentapp\\videorentapp\\converters\\idtovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A257412-3934-4909-AB0F-7F608EC56C40}|VideoRentApp\\VideoRentApp.csproj|solutionrelative:videorentapp\\converters\\idtovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,23 +38,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Templates.xaml",
-              "DocumentMoniker": "C:\\SW_DEV\\Lenguajes2025\\DotNet\\VideoRentApp\\VideoRentApp\\Templates.xaml",
-              "RelativeDocumentMoniker": "VideoRentApp\\Templates.xaml",
-              "ToolTip": "C:\\SW_DEV\\Lenguajes2025\\DotNet\\VideoRentApp\\VideoRentApp\\Templates.xaml",
-              "RelativeToolTip": "VideoRentApp\\Templates.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-09T18:52:54.747Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -58,65 +50,89 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ActorApiService.cs",
-              "DocumentMoniker": "C:\\SW_DEV\\Lenguajes2025\\DotNet\\VideoRentApp\\VideoRentApp\\Services\\ActorApiService.cs",
-              "RelativeDocumentMoniker": "VideoRentApp\\Services\\ActorApiService.cs",
-              "ToolTip": "C:\\SW_DEV\\Lenguajes2025\\DotNet\\VideoRentApp\\VideoRentApp\\Services\\ActorApiService.cs",
-              "RelativeToolTip": "VideoRentApp\\Services\\ActorApiService.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAUwA4AAAAKAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "BooleanToVisibilityConverter.cs",
+              "DocumentMoniker": "C:\\SW_DEV\\Lenguajes2025\\DotNet\\VideoRentApp\\VideoRentApp\\Converters\\BooleanToVisibilityConverter.cs",
+              "RelativeDocumentMoniker": "VideoRentApp\\Converters\\BooleanToVisibilityConverter.cs",
+              "ToolTip": "C:\\SW_DEV\\Lenguajes2025\\DotNet\\VideoRentApp\\VideoRentApp\\Converters\\BooleanToVisibilityConverter.cs",
+              "RelativeToolTip": "VideoRentApp\\Converters\\BooleanToVisibilityConverter.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABkAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T17:11:46.371Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-16T16:59:51.699Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "ActorFormUcView.xaml",
+              "DocumentMoniker": "C:\\SW_DEV\\Lenguajes2025\\DotNet\\VideoRentApp\\VideoRentApp\\Views\\ActorFormUcView.xaml",
+              "RelativeDocumentMoniker": "VideoRentApp\\Views\\ActorFormUcView.xaml",
+              "ToolTip": "C:\\SW_DEV\\Lenguajes2025\\DotNet\\VideoRentApp\\VideoRentApp\\Views\\ActorFormUcView.xaml",
+              "RelativeToolTip": "VideoRentApp\\Views\\ActorFormUcView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-16T16:22:30.066Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ActorsListUcView.xaml.cs",
+              "DocumentMoniker": "C:\\SW_DEV\\Lenguajes2025\\DotNet\\VideoRentApp\\VideoRentApp\\Views\\ActorsListUcView.xaml.cs",
+              "RelativeDocumentMoniker": "VideoRentApp\\Views\\ActorsListUcView.xaml.cs",
+              "ToolTip": "C:\\SW_DEV\\Lenguajes2025\\DotNet\\VideoRentApp\\VideoRentApp\\Views\\ActorsListUcView.xaml.cs",
+              "RelativeToolTip": "VideoRentApp\\Views\\ActorsListUcView.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T16:23:02.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ActorViewModel.cs",
+              "DocumentMoniker": "C:\\SW_DEV\\Lenguajes2025\\DotNet\\VideoRentApp\\VideoRentApp\\ViewModel\\ActorViewModel.cs",
+              "RelativeDocumentMoniker": "VideoRentApp\\ViewModel\\ActorViewModel.cs",
+              "ToolTip": "C:\\SW_DEV\\Lenguajes2025\\DotNet\\VideoRentApp\\VideoRentApp\\ViewModel\\ActorViewModel.cs*",
+              "RelativeToolTip": "VideoRentApp\\ViewModel\\ActorViewModel.cs*",
+              "ViewState": "AgIAADEAAAAAAAAAAAA0wDsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T16:20:59.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IdToVisibilityConverter.cs",
+              "DocumentMoniker": "C:\\SW_DEV\\Lenguajes2025\\DotNet\\VideoRentApp\\VideoRentApp\\Converters\\IdToVisibilityConverter.cs",
+              "RelativeDocumentMoniker": "VideoRentApp\\Converters\\IdToVisibilityConverter.cs",
+              "ToolTip": "C:\\SW_DEV\\Lenguajes2025\\DotNet\\VideoRentApp\\VideoRentApp\\Converters\\IdToVisibilityConverter.cs",
+              "RelativeToolTip": "VideoRentApp\\Converters\\IdToVisibilityConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T16:38:10.811Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ActorsListUcView.xaml",
               "DocumentMoniker": "C:\\SW_DEV\\Lenguajes2025\\DotNet\\VideoRentApp\\VideoRentApp\\Views\\ActorsListUcView.xaml",
               "RelativeDocumentMoniker": "VideoRentApp\\Views\\ActorsListUcView.xaml",
               "ToolTip": "C:\\SW_DEV\\Lenguajes2025\\DotNet\\VideoRentApp\\VideoRentApp\\Views\\ActorsListUcView.xaml",
               "RelativeToolTip": "VideoRentApp\\Views\\ActorsListUcView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-09T16:39:17.134Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ActorViewModel.cs",
-              "DocumentMoniker": "C:\\SW_DEV\\Lenguajes2025\\DotNet\\VideoRentApp\\VideoRentApp\\ViewModel\\ActorViewModel.cs",
-              "RelativeDocumentMoniker": "VideoRentApp\\ViewModel\\ActorViewModel.cs",
-              "ToolTip": "C:\\SW_DEV\\Lenguajes2025\\DotNet\\VideoRentApp\\VideoRentApp\\ViewModel\\ActorViewModel.cs",
-              "RelativeToolTip": "VideoRentApp\\ViewModel\\ActorViewModel.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAA0wHgAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T16:48:44.581Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\SW_DEV\\Lenguajes2025\\DotNet\\VideoRentApp\\VideoRentApp\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "VideoRentApp\\MainWindow.xaml",
-              "ToolTip": "C:\\SW_DEV\\Lenguajes2025\\DotNet\\VideoRentApp\\VideoRentApp\\MainWindow.xaml",
-              "RelativeToolTip": "VideoRentApp\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-09T16:43:57.629Z",
+              "WhenOpened": "2025-06-16T16:22:49.856Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ActorsListUcView.xaml.cs",
-              "DocumentMoniker": "C:\\SW_DEV\\Lenguajes2025\\DotNet\\VideoRentApp\\VideoRentApp\\Views\\ActorsListUcView.xaml.cs",
-              "RelativeDocumentMoniker": "VideoRentApp\\Views\\ActorsListUcView.xaml.cs",
-              "ToolTip": "C:\\SW_DEV\\Lenguajes2025\\DotNet\\VideoRentApp\\VideoRentApp\\Views\\ActorsListUcView.xaml.cs",
-              "RelativeToolTip": "VideoRentApp\\Views\\ActorsListUcView.xaml.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAAfAAAAAAAAAA==",
+              "Title": "ActorFormUcView.xaml.cs",
+              "DocumentMoniker": "C:\\SW_DEV\\Lenguajes2025\\DotNet\\VideoRentApp\\VideoRentApp\\Views\\ActorFormUcView.xaml.cs",
+              "RelativeDocumentMoniker": "VideoRentApp\\Views\\ActorFormUcView.xaml.cs",
+              "ToolTip": "C:\\SW_DEV\\Lenguajes2025\\DotNet\\VideoRentApp\\VideoRentApp\\Views\\ActorFormUcView.xaml.cs",
+              "RelativeToolTip": "VideoRentApp\\Views\\ActorFormUcView.xaml.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB8AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T16:39:59.762Z",
+              "WhenOpened": "2025-06-16T16:20:55.827Z",
               "EditorCaption": ""
             }
           ]

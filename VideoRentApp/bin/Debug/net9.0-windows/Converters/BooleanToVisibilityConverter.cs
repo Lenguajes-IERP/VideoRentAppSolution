@@ -19,6 +19,11 @@ namespace VideoRentApp.Converters
         {
             if (value is bool booleanValue)
             {
+                // Check for optional inversion parameter
+                if (parameter != null && parameter.ToString().ToLower() == "invert")
+                {
+                    booleanValue = !booleanValue;
+                }
                 // If the boolean from the ViewModel is true, make the UI element Visible.
                 // If it's false, make it Collapsed (hidden and takes up no space).
                 return booleanValue ? Visibility.Visible : Visibility.Collapsed;

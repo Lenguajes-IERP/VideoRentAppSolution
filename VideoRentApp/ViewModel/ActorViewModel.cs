@@ -1,57 +1,64 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Collections.ObjectModel;
+﻿using System.Collections.ObjectModel;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using System.Windows.Input;
 using System.Windows;
 using VideoRentApp.Services;
 using VideoRentApp.Models;
+using System.Windows.Input;
+using VideoRentApp.Views;
 
 namespace VideoRentApp.ViewModel
 {
-    public class ActorViewModel: ObservableObject
+    // TODO correccion
+    public partial class ActorViewModel: ObservableObject
     {
         private readonly ActorApiService _apiService;
+
+        [ObservableProperty]
         private ObservableCollection<Actor> _actors;
+
+
+        // CORRECCIÓN
+        // El atributo [NotifyCanExecuteChangedFor] notifica automáticamente a los comandos
+        // cuando esta propiedad cambia. Esto reemplaza la lógica manual en el 'setter'.
+        [ObservableProperty]
+        [NotifyCanExecuteChangedFor(nameof(EditActorCommand))]
+        [NotifyCanExecuteChangedFor(nameof(DeleteActorCommand))]
         private Actor _selectedActor;
+
+        [ObservableProperty]
         private bool _isLoading;
 
-        public ObservableCollection<Actor> Actors
-        {
-            get => _actors;
-            set { _actors = value; OnPropertyChanged(); }
-        }
+        [ObservableProperty]
+        private bool _isEditingOrAdding; // TODO para editar
 
-        public Actor SelectedActor
-        {
-            get => _selectedActor;
-            set { _selectedActor = value; OnPropertyChanged(); }
-        }
+        [ObservableProperty]
+        private Actor _actorInEdit; //TODO para editar
 
-        public bool IsLoading
-        {
-            get => _isLoading;
-            set { _isLoading = value; OnPropertyChanged(); }
-        }
-
-        public IAsyncRelayCommand AddActorCommand { get; }
-        public IAsyncRelayCommand EditActorCommand { get; }
+        //Comandos
+        public IRelayCommand AddActorCommand { get; }
+        public IRelayCommand EditActorCommand { get; }
         public IAsyncRelayCommand DeleteActorCommand { get; }
+        // TODO para editar
+        public ICommand SaveCommand { get; }
+        public ICommand CancelCommand { get; }
 
         public ActorViewModel()
         {
             _apiService = new ActorApiService();
             Actors = new ObservableCollection<Actor>();
 
-            AddActorCommand = new AsyncRelayCommand(AddActor);
-            EditActorCommand = new AsyncRelayCommand(EditActor);
-            DeleteActorCommand = new AsyncRelayCommand(DeleteActor);
+            AddActorCommand = new RelayCommand(AddActor);
+            // Ga
+            EditActorCommand = new RelayCommand(EditActor, () => SelectedActor != null);
+            DeleteActorCommand = new AsyncRelayCommand(DeleteActor, () => SelectedActor != null);
 
-            //  "fire-and-forget" an async task in a constructor
+            // TODO Comandos del formulario
+            SaveCommand = new RelayCommand(async () => await SaveActor());
+            CancelCommand = new RelayCommand(Cancel);
+
+            IsEditingOrAdding = true;
+            //  Cargado asíncrono de los actores
             _ = LoadActorsAsync();
         }
 
@@ -67,9 +74,12 @@ namespace VideoRentApp.ViewModel
             IsLoading = false;
         }
 
-        private async Task AddActor()
+        // TODO corrección
+        private void AddActor()
         {
-            var newActor = new Actor();
+            ActorInEdit = new Actor();
+            IsEditingOrAdding = true;
+
             /*var detailWindow = new ActorDetailWindow(newActor);
             if (detailWindow.ShowDialog() == true)
             {
@@ -85,19 +95,22 @@ namespace VideoRentApp.ViewModel
             }*/
         }
 
-        private async Task EditActor()
+        // TODO corrección
+        private void EditActor()
         {
+            // TODO código para editar
 
-           /* if (SelectedActor == null) return;
+           if (SelectedActor == null) return;
 
-            var actorToEdit = new Actor
+            ActorInEdit = new Actor
             {
                 ActorId = SelectedActor.ActorId,
                 NombreActor = SelectedActor.NombreActor,
                 ApellidosActor = SelectedActor.ApellidosActor
             };
+            IsEditingOrAdding = true;
 
-            var detailWindow = new ActorDetailWindow(actorToEdit);
+            /*var actorForm = new ActorFormUcView(actorToEdit);
             if (detailWindow.ShowDialog() == true)
             {
                 try
@@ -132,6 +145,45 @@ namespace VideoRentApp.ViewModel
                     MessageBox.Show($"Error al eliminar actor: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
+        }//DeleteActor
+
+
+        //TODO para editar
+        private async Task SaveActor()
+        {
+            if (ActorInEdit == null || string.IsNullOrWhiteSpace(ActorInEdit.NombreActor) || string.IsNullOrWhiteSpace(ActorInEdit.ApellidosActor))
+            {
+                MessageBox.Show("El nombre y los apellidos son obligatorios.", "Datos incompletos", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+
+            IsLoading = true;
+            try
+            {
+                if (ActorInEdit.ActorId == 0) // Nuevo actor
+                {
+                    await _apiService.AddActorAsync(ActorInEdit);
+                }
+                else // Actor existente
+                {
+                    await _apiService.UpdateActorAsync(ActorInEdit);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al guardar el actor: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+            finally
+            {
+                IsEditingOrAdding = false;
+                await LoadActorsAsync(); // Recargar la lista para mostrar los cambios
+            }
+        }
+        // para editar
+        private void Cancel()
+        {
+            IsEditingOrAdding = false;
+            ActorInEdit = null;
         }
     }
 }
